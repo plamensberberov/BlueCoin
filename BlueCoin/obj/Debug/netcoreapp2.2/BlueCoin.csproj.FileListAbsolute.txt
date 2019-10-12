@@ -1,0 +1,11 @@
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.csprojAssemblyReference.cache
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.csproj.CoreCompileInputs.cache
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.AssemblyInfoInputs.cache
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.AssemblyInfo.cs
+C:\Users\х\source\repos\BlueCoin\BlueCoin\bin\Debug\netcoreapp2.2\BlueCoin.deps.json
+C:\Users\х\source\repos\BlueCoin\BlueCoin\bin\Debug\netcoreapp2.2\BlueCoin.runtimeconfig.json
+C:\Users\х\source\repos\BlueCoin\BlueCoin\bin\Debug\netcoreapp2.2\BlueCoin.runtimeconfig.dev.json
+C:\Users\х\source\repos\BlueCoin\BlueCoin\bin\Debug\netcoreapp2.2\BlueCoin.dll
+C:\Users\х\source\repos\BlueCoin\BlueCoin\bin\Debug\netcoreapp2.2\BlueCoin.pdb
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.dll
+C:\Users\х\source\repos\BlueCoin\BlueCoin\obj\Debug\netcoreapp2.2\BlueCoin.pdb
