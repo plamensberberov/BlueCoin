@@ -130,9 +130,10 @@ namespace BlueCoin.Classes
                 string hashString = string.Empty;
                 foreach (var currByte in this.Hash)
                 {
-                    hashString = hashString.Insert(hashString.Length, ((int)currByte).ToString("X4"));
+                    hashString = hashString.Insert(hashString.Length, ((int)currByte).ToString("X2"));
                 }
-                //Console.WriteLine(hashString);
+                Console.WriteLine("Mining block current hash:");
+                Console.WriteLine(hashString);
             }
         }
 

@@ -9,7 +9,7 @@ namespace BlueCoin
         static void Main(string[] args)
         {
             Blockchain blockchain = new Blockchain();
-            blockchain.AddTransaction(0, 200, 15m);
+            blockchain.AddTransaction(0, 200, 866m);
             Console.WriteLine(blockchain.MineFirstPendingTransaction(2));
             var hash = blockchain.Chain[1].Transactions[0].Hash;
             string hashString = string.Empty;
