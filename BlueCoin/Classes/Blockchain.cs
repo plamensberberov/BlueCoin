@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -114,7 +114,7 @@ namespace BlueCoin.Classes
                 List<byte> transactionSeed = new List<byte>();
                 foreach (var transaction in this.Transactions)
                 {
-                    transactionSeed.AddRange(Hash.AsEnumerable());
+                    transactionSeed.AddRange(transaction.Hash.AsEnumerable());
                 }
 
                 byte[] hashSeed = BitConverter.GetBytes(this.Time.ToBinary())
