@@ -17,7 +17,7 @@ namespace BlueCoin.Classes
         public List<Transaction> PendingTransactions { get; private set; }
         public decimal MiningReward => 10m;
         public List<Block> Chain { get; private set; }
-        public int Difficulty => 1;
+        public int Difficulty => 4;
 
         public string AddTransaction(int sender, int receiver, decimal amount)
         {
@@ -91,25 +91,23 @@ namespace BlueCoin.Classes
                 .Concat(transactionSeed)
                 .ToArray();
 
-            SHA512 sha = new SHA512Managed();
+            SHA256 sha = new SHA256Managed();
 
             return sha.ComputeHash(hashSeed);
         }
 
         public void MineBlock(int difficulty)
         {
-            SHA512 sha = new SHA512Managed();
+            SHA256 sha = new SHA256Managed();
             string minedCheck = string.Empty;
             for (int k = 0; k < difficulty; k++)
-                minedCheck.Append('0');
+                minedCheck = minedCheck.Insert(k ,"0");
 
-            string mined = string.Empty;
-            foreach(var currByte in this.Hash)
-            {
-                mined = mined.Insert(mined.Length ,((int)currByte).ToString("X4"));
-            }
+            string hashString = string.Empty;
+            for (int k = 0; k <= difficulty; k++)
+                hashString = hashString.Insert(k, "1");
 
-            for(int i = 1; mined != minedCheck; i++)
+            for (int i = 1; hashString.Substring(0, difficulty) != minedCheck; i++)
             {
                 this.Nonce = i;
 
@@ -127,7 +125,7 @@ namespace BlueCoin.Classes
 
                 this.Hash = sha.ComputeHash(hashSeed);
 
-                string hashString = string.Empty;
+                hashString = string.Empty;
                 foreach (var currByte in this.Hash)
                 {
                     hashString = hashString.Insert(hashString.Length, ((int)currByte).ToString("X2"));

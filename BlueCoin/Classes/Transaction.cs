@@ -31,7 +31,7 @@ namespace BlueCoin.Classes
                 .Concat(BitConverter.GetBytes(Amount.GetHashCode()))
                 .ToArray();
 
-            SHA512 sha = new SHA512Managed();
+            SHA256 sha = new SHA256Managed();
 
             return sha.ComputeHash(hashSeed);
         }
